@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calcular</title>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="card-img">
+                <img src="./assets/img/laptop.png">
+            </div>
+            <div>
+                <h6> Laptop Gamer AMD</h6>
+            </div>
+            <div class="input-container">
+                <input type="number" min="1" id="cantidad" class="cantidad" placeholder="Cantidad" />
+            </div>
+            <div class="input-container">
+                <select class="colorclase" placeholder="Color">
+                    <option value="">Selecciona un color</option>
+                    <option value="Red">Rojo</option>
+                    <option value="green">Verde</option>
+                    <option value="blue">Azul</option>
+                </select>
+            </div>
+            <div class="precio-container">
+                <p>Precio: $<span class="precio-inicial">50.000</span></p>
+            </div>
+            <div class="card-botonera">
+                <button onclick="
+                    const precio = 50000;
+                    const cantidadInput = document.querySelector('input[type=number]').value;
+                    const colorInput = document.querySelector('.colorclase').value;
+
+                    const precioFinal = document.querySelector('.valor-total');
+                    const cantidadFinal = document.querySelector('.cantidad-total');
+                    const colorFinal = document.querySelector('.colorCambiar ');
+
+                    const precioFinalCalculado = cantidadInput * precio;
+
+                    precioFinal.innerHTML = precioFinalCalculado.toLocaleString();
+                    cantidadFinal.innerHTML = cantidadInput;
+                    colorFinal.style.backgroundColor = colorInput;
+                "> 
+                Calcular Total
+                </button>
+            </div>
+        </div>
+        <div class="total-section">
+            <div class="total-info">
+                <p>Total: $<span class="valor-total">0</span></p>
+                <p>Cantidad: <span class="cantidad-total">0</span></p>
+                <div class="color">
+                    <p>Color:</p>
+                    <div class="colorCambiar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

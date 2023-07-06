@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+  }
+  
+  
+  .card {
+    background-color: #779944;
+    box-shadow: 0px 0px 8px #140f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  
+  img {
+    width: 200px;
+  }
+  
+  h6,
+  p {
+
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(12, 11, 11);
+  }
+  
+  select {
+    width: 100%;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  button {
+    background-color: rgb(240, 168, 35);
+    padding: 0.7rem;
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(34, 18, 18);
+    border-radius: 0.90rem;
+  }
+
+  
+  .contidad-total p {
+    color: rgb(231, 39, 39);
+    font-size: 1.2rem;
+  }
+  
+  .colorCambiar {
+    background-color: black;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+  }
+  .total-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.precio-container {
+  align-self: flex-start;
+}
+
+.total-section {
+  display: flex;
+  justify-content: flex-start;
+}
